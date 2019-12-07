@@ -1,5 +1,6 @@
 n = [0:199];
-x = sin((3*pi/100).*n);
+words = 'Enter a fcn for x(n)';
+x = input(words)	%sin((3*pi/100).*n) as the input%
 for i = 1:200
     if n(i) == 0
 	y(i) = (-1.5*x(i))+(2*x(i+1))+(-0.5*x(i+2));
