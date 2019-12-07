@@ -1,16 +1,16 @@
 n = [0:199];
 words = 'Enter a fcn for x(n)';
 x = input(words)	%sin((3*pi/100).*n) as the test input%
-for i = 1:200
-    if n(i) == 0
-	y(i) = (-1.5*x(i))+(2*x(i+1))+(-0.5*x(i+2));
-    elseif (n(i) > 0) && (n(i) <= 198)
-	y(i) = (0.5*x(i+1))+(-0.5*x(i-1));
-    elseif n(i) == 199
-	y(i) = (1.5*x(i))+(-2*x(i-1))+(0.5*x(i-2));
+for o = 1:200
+    if n(o) == 0
+	y(o) = (-1.5*x(o))+(2*x(o+1))+(-0.5*x(o+2));
+    elseif (n(o) > 0) && (n(o) <= 198)
+	y(o) = (0.5*x(o+1))+(-0.5*x(o-1));
+    elseif n(o) == 199
+	y(o) = (1.5*x(o))+(-2*x(o-1))+(0.5*x(o-2));
     end
 end
-
+%outside .m file%
 plot(n,x)
 hold
 plot(n,y)
